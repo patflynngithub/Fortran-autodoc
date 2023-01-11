@@ -3,7 +3,7 @@ module a_mod
 
   implicit none
  
-  !> not used but want example of module-level vairable 
+  !> not used but want example of module-level variable
   integer :: a_mod_int_value
     
 contains

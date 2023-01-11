@@ -1,12 +1,14 @@
-**FORD autodoc demonstration**
+**FORD autodoc exercising**
 
-Note: Unless noted, the autodoc comments are pre-docs (!>): that is, documentation before the item they document.
+Exercising the FORD Fortran Autodoc program to be sure that it supports the autodoc-ing of desired Fortran elements. Also show the available features of FORD and how to get them to work.
 
 The code in *src/* exercises the FORD program with the following FORTRAN elements:
 
+(note: unless noted, the autodoc comments are pre-docs (!>): that is, auto-documentation is placed before the item they document.)
+
 - non-autodoc comments
 - main program
-- main program: variable declaration (inline after declaration)
+- main program: variable declaration (post-doc: inline after declaration)
 - main program: subroutine
 - main program: variable declaration inside subroutine (before declaration)
 - main program: function
@@ -32,10 +34,11 @@ FORTRAN elements still to add:
 
 - main program: function return type in function declaration (rather than inside the function body)
 - module: function return type in function declaration (rather than inside the function body)
+- cpp preprocess includes
 - generic procedures
 - generic type-bound procedures
 
 Notes:
-- FORD extracts procedure dummy variable information from the dummy variable declarations themselves rather than any info inside the autodoc comment before the procedure definition
+- FORD extracts procedure dummy variable information directly from the dummy variable FORTRAN declarations inside the procedure rather than any info inside an autodoc comment for the procedure definition. So, if the general procedure comment includes any dummy variable info, it is duplicative of the information displayed by FORD after directly analyzing the FORTRAN code. So, in the final generated autodoc documentation (htmal, pdf, etc.) there will be two sets of autodoc comments on the dummy variables, with the set generated directly from the FORTRAN code always (if there is no FORD bug) being correct. Generally, not a big deal. However, if a change is made to a procedure's dummy variable without changing its duplicative comment inside the procedure's autodoc comment, the two sets of comments on th$e dummy variable will disagree, with one being correct and the other not correct.
 
 
