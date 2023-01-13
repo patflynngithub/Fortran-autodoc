@@ -1,40 +1,59 @@
-**FORD autodoc exercising**
+cha# FORD autodoc exercising
 
-Exercising the FORD Fortran Autodoc program to be sure that it supports the autodoc-ing of desired Fortran elements. Also show the available features of FORD and how to get them to work.
+Exercising the FORD Fortran Autodoc program to be sure that it supports the autodoc-ing of desired Fortran elements. Shows the available features of FORD and how to get them to work.
 
 The code in *src/* exercises the FORD program with the following FORTRAN elements:
 
 (note: unless noted, the autodoc comments are pre-docs (!>): that is, auto-documentation is placed before the item they document.)
 
 - non-autodoc comments
-- main program
-- main program: variable declaration (post-doc: inline after declaration)
-- main program: subroutine
-- main program: variable declaration inside subroutine (before declaration)
-- main program: function
-- main program: function return type declaration inside function
-- main program: variable declaration inside function
+- main program 
+- main program: variable declaration with comment before declaration
+- main program: variable declaration with inline comment after declaration
+- main program: variable declaration with comment before and inline after declaration
+- main program subroutine
+- main program subroutine: variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- main program subroutine: variable declaration with inline comment after declaration
+- main program function
+- main program function: return type before function's name
+- main program function: return type declaration inside function
+- main program function: return result declaration
+- main program function: variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- main program function: variable declaration with inline comment after declaration
 - module
-- module-level variable
-- module: subroutine
-- module: variable declaration inside subroutine
-- module: function
-- module: function return type declaration inside function
-- module: variable declaration inside function
-- module: derived type definition (struct)
-- module: derived type definition (w/ type-bound procedures; i.e., a class)
-- module: private variable inside derived type (shouldn't be autodoc'd)
-- module: type-bound subroutine inside dervived type
-- module: type-bound function inside dervived type
-- module: derived type definition (extended class)
-- submodule
-
+- module: module-level variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module: module-level variable declaration with inline comment after declaration
+- module subroutine
+- module subroutine: dummy variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module subroutine: local variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module subroutine: local variable declaration with inline comment after declaration
+- module function
+- module function: return type before function's name (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module function: return type declaration inside function (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module function: return result declaration (?)
+- module function: dummy variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module function: local variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module function: local variable declaration with inline comment after declaration
+- module derived type: struct (no type-bound procedures)
+- module derived type w/ type-bound procedures
+- module derived type w/ type-bound procedures: private variable inside derived type (shouldn't be autodoc'd?)
+- module type-bound subroutine
+- module type-bound subroutine: dummy variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module type-bound subroutine: local variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module type-bound function
+- module type-bound function: return type before function's name (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module type-bound function: return type declaration inside function (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module type-bound function: return result declaration (?)
+- module type-bound function: dummy variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module type-bound function: local variable declarations (logical, integer, real, character, type(), with/without kind as appropriate, in/out/inout, scalar/array)
+- module: derived type that extends
+- module with submodule
+- module with submodule with declarations included in the module via CPP
+- submodule that redeclares procedures
+- submodule that doesn't redeclare procedures
 
 FORTRAN elements still to add:
 
-- main program: function return type in function declaration (rather than inside the function body)
-- module: function return type in function declaration (rather than inside the function body)
-- cpp preprocess includes
 - generic procedures
 - generic type-bound procedures
 
