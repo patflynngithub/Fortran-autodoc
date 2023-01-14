@@ -52,7 +52,8 @@
             <li><a href="../lists/files.html">Source Files</a></li>
             <li><a href="../lists/modules.html">Modules</a></li>
             <li><a href="../lists/procedures.html">Procedures</a></li>
-                   <li><a href="../program/main.html">Program</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
        
             </ul>
         
@@ -60,7 +61,8 @@
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-                             <li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
           </ul>
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
@@ -87,7 +89,7 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title="100.0% of total for programs.">176 statements</a>
+               title="100.0% of total for programs.">203 statements</a>
           </li>
 
             <li id="source-file">
@@ -153,6 +155,8 @@
             <a class="list-group-item" href="../program/main.html#variable-string2~5">string2</a>
             <a class="list-group-item" href="../program/main.html#variable-stringarray1~5">stringarray1</a>
             <a class="list-group-item" href="../program/main.html#variable-stringarray2~5">stringarray2</a>
+            <a class="list-group-item" href="../program/main.html#variable-stored_int">stored_int</a>
+            <a class="list-group-item" href="../program/main.html#variable-stored_real">stored_real</a>
         </div>
       </div>
     </div>
@@ -215,13 +219,14 @@
           <li class="list-group-item">
             <ul class="list-inline">
                 <li><a href='../module/kinds_mod.html'>kinds_mod</a></li>
+                <li><a href='../module/classes_mod.html'>classes_mod</a></li>
                 <li><a href='../module/a_mod.html'>a_mod</a></li>
             </ul>
           </li>
       </ul>
     </div>
 
-    <p>FORD autodoc exerciser program</p>
+    <p>FORD Fortran autodoc exerciser program</p>
 <br>
      <section class="visible-xs visible-sm hidden-md">
          <h3>Contents</h3>
@@ -264,6 +269,8 @@
             <a class="list-group-item" href="../program/main.html#variable-string2~5">string2</a>
             <a class="list-group-item" href="../program/main.html#variable-stringarray1~5">stringarray1</a>
             <a class="list-group-item" href="../program/main.html#variable-stringarray2~5">stringarray2</a>
+            <a class="list-group-item" href="../program/main.html#variable-stored_int">stored_int</a>
+            <a class="list-group-item" href="../program/main.html#variable-stored_real">stored_real</a>
         </div>
       </div>
     </div>
@@ -808,6 +815,40 @@ post-doc comment</p>
                 <td></td>
             <td>
                 <p>character(len=23) :: stringarray2(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-stored_int"></span>
+              type(<a href='../type/int_class_extended_t.html'>int_class_extended_t</a>)
+            </td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>stored_int</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>pre-doc comment
+post-doc comment</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-stored_real"></span>
+              type(<a href='../type/real_class_extended_t.html'>real_class_extended_t</a>)
+            </td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>stored_real</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>pre-doc comment
+post-doc comment</p>
             </td>
         </tr>
     </tbody>

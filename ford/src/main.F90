@@ -1,19 +1,22 @@
-!> FORD autodoc exerciser program
+!> FORD Fortran autodoc exerciser program
 program main
 
   use kinds_mod
   use a_mod
-!  use classes_mod
+  use classes_mod
   
   implicit none
 
   !> pre-doc comment
   logical :: logical_value
   integer :: int_value  !! post-doc comment
-
   !> pre-doc comment
   real    :: real_value !! post-doc comment
-   
+
+  ! --------------------------------------------------------------------------
+  ! declarations duplicated in post-doc comments so see how the autodoc program
+  ! processes the declarations
+  ! ---------------------------------------------------------------------------
   logical :: bool1                     !! logical :: bool1
   logical :: bool2                     !! logical :: bool2
   logical :: bool3                     !! logical :: bool3
@@ -45,14 +48,45 @@ program main
   character(22), dimension(2) :: stringarray1 !! character(22), dimension(2) :: stringarray1
   character(len=23) :: stringarray2(3)        !! character(len=23) :: stringarray2(3)
 
-!   !> pre-doc comment
-!  type(my_class_extended_t) :: stored_num  !! post-doc comment
+  !> pre-doc comment
+  type(int_class_extended_t) :: stored_int  !! post-doc comment
   
-!  if (stored_num%is_set()) then
-!     write (*,*) "number stored"
-!  else
-!     write (*,*) "number not stored"  
-!  end if
+  !> pre-doc comment
+  type(real_class_extended_t) :: stored_real  !! post-doc comment
+  
+  ! -------------------------------------------
+  !
+  ! Classes module method calls
+  !
+  
+  if (stored_int%is_set()) then
+     write (*,*) "int stored"
+  else
+     write (*,*) "int not stored"  
+  end if
+
+  if (stored_real%is_set()) then
+     write (*,*) "real stored"
+  else
+     write (*,*) "real not stored"  
+  end if
+
+  ! This is just a normal comment that will not be in autodoc
+  write (*,*) "Storing integer"
+  call stored_int%set_value(int_value)
+  if (stored_int%is_set()) then
+     write (*,*) "int stored"
+  else
+     write (*,*) "int not stored"  
+  end if
+
+  write (*,*) "Storing real"
+  call stored_real%set_value(3.14)
+  if (stored_real%is_set()) then
+     write (*,*) "real stored"
+  else
+     write (*,*) "real not stored"  
+  end if
 
   ! -------------------------------------------
   !
@@ -120,15 +154,6 @@ program main
                                     a_char, string1, string2, stringarray1, stringarray2,             &
                                     "up?")
 
-!   ! This is just a normal comment that will not be in autodoc
-!   ! Exercising types_mod module
-!   call stored_num%set_value(int_value)
-!   if (stored_num%is_set()) then
-!      write (*,*) "number stored"
-!   else
-!      write (*,*) "number not stored"  
-!   end if
-  
 contains
 
 !> Main program subroutine that exercises the dummy variables for autodoc program

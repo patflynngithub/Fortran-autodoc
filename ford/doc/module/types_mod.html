@@ -8,7 +8,7 @@
     <meta name="author" content="Patrick Flynn" >
     <link rel="icon" href="../favicon.png">
 
-    <title>kinds_mod &ndash; FORD Fortran Autodoc exerciser</title>
+    <title>types_mod &ndash; FORD Fortran Autodoc exerciser</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -78,7 +78,7 @@
 
     <div class="container">
   <div class="row">
-    <h1>kinds_mod 
+    <h1>types_mod 
     <small>Module</small>
     
     </h1>
@@ -90,17 +90,17 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title=" 1.5% of total for modules and submodules.">4 statements</a>
+               title=" 3.4% of total for modules and submodules.">9 statements</a>
           </li>
 
             <li id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/kinds_mod.F90"> Source File</a>
+              <a href="../src/types_mod.F90"> Source File</a>
             </li>
         </ul>
         <ol class="breadcrumb in-well text-right">
-              <li><a href='../sourcefile/kinds_mod.f90.html'>kinds_mod.F90</a></li>
-          <li class="active">kinds_mod</li>
+              <li><a href='../sourcefile/types_mod.f90.html'>types_mod.F90</a></li>
+          <li class="active">types_mod</li>
         </ol>
       </div>
     </div>
@@ -118,29 +118,29 @@
       <div id="sidebar">
       <h3>Contents</h3>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
       <div class="panel panel-primary">
       <div class="panel-heading text-left">
         <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-0">Variables</a>
+          <a data-toggle="collapse" href="#types-0">Derived Types</a>
         </h3>
       </div>
-      <div id="vars-0" class="panel-collapse collapse">
+      <div id="types-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../module/types_mod.html#type-int_struct_t">int_struct_t</a>
+            <a class="list-group-item" href="../module/types_mod.html#type-real_struct_t">real_struct_t</a>
         </div>
       </div>
     </div>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -156,7 +156,7 @@
     </div>
     
     <div class="col-md-9" id='text'>
-    <p>Fortran kinds module</p>
+    <p>Struct derived types</p>
     
     
     <br>
@@ -164,29 +164,29 @@
     <section class="visible-xs visible-sm hidden-md">
         <h3>Contents</h3>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
       <div class="panel panel-primary">
       <div class="panel-heading text-left">
         <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-1">Variables</a>
+          <a data-toggle="collapse" href="#types-1">Derived Types</a>
         </h3>
       </div>
-      <div id="vars-1" class="panel-collapse collapse">
+      <div id="types-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../module/types_mod.html#type-int_struct_t">int_struct_t</a>
+            <a class="list-group-item" href="../module/types_mod.html#type-real_struct_t">real_struct_t</a>
         </div>
       </div>
     </div>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -201,9 +201,26 @@
     <br class="visible-xs visible-sm hidden-md">
 
 
+    
+    
+
+    
     <section>
-    <h2>Variables</h2>
-      <table class="table table-striped varlist">
+     <h2>Derived Types</h2>
+       <div class="panel panel-default">
+    <div class="panel-heading codesum">
+      <span class="anchor" id="type-int_struct_t"></span>
+      <h3>
+        type, public&nbsp;::&nbsp;
+        <a href='../type/int_struct_t.html'>int_struct_t</a>
+        
+      </h3>
+    </div>
+    <div class="panel-body">
+      <p>Holds an integer value</p>
+
+        <h4>Components</h4>
+          <table class="table table-striped varlist">
     <thead>
       <tr>
         <th>Type</th>
@@ -215,47 +232,81 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-long"></span>
+              <span class="anchor" id="variable-value~5"></span>
               integer,
             </td>
-              <td>public,</td>
+              <td>public</td>
             <td>
-parameter               
+              
             </td>
             <td>::</td>
-            <td><strong>long</strong></td>
-<td> =</td>
-                <td>8</td>
+            <td><strong>value</strong></td>
+                <td></td>
+                <td></td>
             <td>
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-dp"></span>
-              integer,
-            </td>
-              <td>public,</td>
-            <td>
-parameter               
-            </td>
-            <td>::</td>
-            <td><strong>dp</strong></td>
-<td> =</td>
-                <td>kind(1.d0)</td>
-            <td>
-                
+
             </td>
         </tr>
     </tbody>
   </table>
 
-    </section>
-    <br>
-    
-    
 
-    
+
+
+    </div>
+  </div>
+
+       <div class="panel panel-default">
+    <div class="panel-heading codesum">
+      <span class="anchor" id="type-real_struct_t"></span>
+      <h3>
+        type, public&nbsp;::&nbsp;
+        <a href='../type/real_struct_t.html'>real_struct_t</a>
+        
+      </h3>
+    </div>
+    <div class="panel-body">
+      <p>Holds a real value</p>
+
+        <h4>Components</h4>
+          <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Visibility</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+<th></th><th>Initial</th>        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-value~6"></span>
+              real,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>value</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+
+    </div>
+  </div>
+
+    </section>
+  <br>
     
 
 

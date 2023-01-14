@@ -8,7 +8,7 @@
     <meta name="author" content="Patrick Flynn" >
     <link rel="icon" href="../favicon.png">
 
-    <title>kinds_mod &ndash; FORD Fortran Autodoc exerciser</title>
+    <title>int_class_t &ndash; FORD Fortran Autodoc exerciser </title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -78,9 +78,9 @@
 
     <div class="container">
   <div class="row">
-    <h1>kinds_mod 
-    <small>Module</small>
-    
+    <h1>int_class_t
+      <small>Derived Type</small>
+      
     </h1>
       <div class="row" id="info-bar">
     <div class="col-lg-12">
@@ -90,17 +90,18 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title=" 1.5% of total for modules and submodules.">4 statements</a>
+               title="<p>18.8% of total for derived types.</p>Including implementation: 6 statements, 18.8% of total for derived types.">6 statements</a>
           </li>
 
             <li id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/kinds_mod.F90"> Source File</a>
+              <a href="../src/classes_mod.F90"> Source File</a>
             </li>
         </ul>
         <ol class="breadcrumb in-well text-right">
-              <li><a href='../sourcefile/kinds_mod.f90.html'>kinds_mod.F90</a></li>
-          <li class="active">kinds_mod</li>
+              <li><a href='../sourcefile/classes_mod.f90.html'>classes_mod.F90</a></li>
+              <li><a href='../module/classes_mod.html'>classes_mod</a></li>
+          <li class="active">int_class_t</li>
         </ol>
       </div>
     </div>
@@ -118,36 +119,35 @@
       <div id="sidebar">
       <h3>Contents</h3>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
       <div class="panel panel-primary">
       <div class="panel-heading text-left">
         <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-0">Variables</a>
+          <a data-toggle="collapse" href="#boundprocs-0">Type-Bound Procedures</a>
         </h3>
       </div>
-      <div id="vars-0" class="panel-collapse collapse">
+      <div id="boundprocs-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../type/int_class_t.html#boundprocedure-set_value">set_value</a>
         </div>
       </div>
     </div>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 
 
@@ -156,93 +156,106 @@
     </div>
     
     <div class="col-md-9" id='text'>
-    <p>Fortran kinds module</p>
-    
-    
+      <h2>type, public :: int_class_t</h2>
+    <p>Holds the integer structure</p>
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
         <h3>Contents</h3>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
       <div class="panel panel-primary">
       <div class="panel-heading text-left">
         <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-1">Variables</a>
+          <a data-toggle="collapse" href="#boundprocs-1">Type-Bound Procedures</a>
         </h3>
       </div>
-      <div id="vars-1" class="panel-collapse collapse">
+      <div id="boundprocs-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../type/int_class_t.html#boundprocedure-set_value">set_value</a>
         </div>
       </div>
     </div>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
+    
 
-    <section>
-    <h2>Variables</h2>
+
+      <section>
+        <h2>Type-Bound Procedures</h2>
+            <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-set_value"></span><h3>procedure, public :: <strong>set_value</strong>  => <a href='../interface/set_value_int_class.html'>set_value_int_class</a>         
+    </h3></div>
+      <div class="panel-body">
+        
+        <p>Sets the integer structure</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                <p>For submodule</p>
+                  <h3>
+    public module subroutine set_value_int_class(this, value)  
+</h3>
+  
+
+  <h4>Arguments</h4>
       <table class="table table-striped varlist">
     <thead>
       <tr>
         <th>Type</th>
-<th>Visibility</th>        <th>Attributes</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
         <th></th>
         <th>Name</th>
-<th></th><th>Initial</th>        <th></th>
+        <th></th>
     </thead>
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-long"></span>
-              integer,
+              <span class="anchor" ></span>
+              class(<a href='../type/int_class_t.html'>int_class_t</a>),
             </td>
-              <td>public,</td>
-            <td>
-parameter               
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
             </td>
             <td>::</td>
-            <td><strong>long</strong></td>
-<td> =</td>
-                <td>8</td>
+            <td><strong>this</strong></td>
             <td>
                 
             </td>
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-dp"></span>
+              <span class="anchor" ></span>
               integer,
             </td>
-              <td>public,</td>
-            <td>
-parameter               
+<td>intent(in)</td>
+              <td></td>            <td>
+              
             </td>
             <td>::</td>
-            <td><strong>dp</strong></td>
-<td> =</td>
-                <td>kind(1.d0)</td>
+            <td><strong>value</strong></td>
             <td>
                 
             </td>
@@ -250,17 +263,14 @@ parameter
     </tbody>
   </table>
 
-    </section>
-    <br>
-    
-    
+
+        </li>
+    </ul>
+  </div>
+
+      </section>
 
     
-    
-
-
-
-
     </div>
   </div>
 

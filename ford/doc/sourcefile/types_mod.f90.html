@@ -8,7 +8,7 @@
     <meta name="author" content="Patrick Flynn" >
     <link rel="icon" href="../favicon.png">
 
-    <title>kinds_mod &ndash; FORD Fortran Autodoc exerciser</title>
+    <title>types_mod.F90 &ndash; FORD Fortran Autodoc exerciser</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -78,9 +78,9 @@
 
     <div class="container">
   <div class="row">
-    <h1>kinds_mod 
-    <small>Module</small>
-    
+    <h1>types_mod.F90
+      <small>Source File</small>
+      
     </h1>
       <div class="row" id="info-bar">
     <div class="col-lg-12">
@@ -90,17 +90,16 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title=" 1.5% of total for modules and submodules.">4 statements</a>
+               title=" 1.9% of total for source files.">9 statements</a>
           </li>
 
             <li id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/kinds_mod.F90"> Source File</a>
+              <a href="../src/types_mod.F90"> Source File</a>
             </li>
         </ul>
         <ol class="breadcrumb in-well text-right">
-              <li><a href='../sourcefile/kinds_mod.f90.html'>kinds_mod.F90</a></li>
-          <li class="active">kinds_mod</li>
+          <li class="active">types_mod.F90</li>
         </ol>
       </div>
     </div>
@@ -112,22 +111,24 @@
   </script>
 
   </div>
-  
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
       <div id="sidebar">
       <h3>Contents</h3>
   
+  
+  
+  
+  
       <div class="panel panel-primary">
       <div class="panel-heading text-left">
         <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-0">Variables</a>
+          <a data-toggle="collapse" href="#mods-0">Modules</a>
         </h3>
       </div>
-      <div id="vars-0" class="panel-collapse collapse">
+      <div id="mods-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../module/types_mod.html">types_mod</a>
         </div>
       </div>
     </div>
@@ -145,35 +146,37 @@
   
   
   
-  
-  
-  
-  
+    <div class="panel panel-primary">
+      <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../sourcefile/types_mod.f90.html#src">types_mod.F90</a>
+      </div>
+    </div>
 
 
   </div>
 
     </div>
-    
     <div class="col-md-9" id='text'>
-    <p>Fortran kinds module</p>
-    
-    
-    <br>
+      
+      <br>
 
     <section class="visible-xs visible-sm hidden-md">
         <h3>Contents</h3>
   
+  
+  
+  
+  
       <div class="panel panel-primary">
       <div class="panel-heading text-left">
         <h3 class="panel-title">
-          <a data-toggle="collapse" href="#vars-1">Variables</a>
+          <a data-toggle="collapse" href="#mods-1">Modules</a>
         </h3>
       </div>
-      <div id="vars-1" class="panel-collapse collapse">
+      <div id="mods-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../module/types_mod.html">types_mod</a>
         </div>
       </div>
     </div>
@@ -191,76 +194,38 @@
   
   
   
-  
-  
-  
-  
+    <div class="panel panel-primary">
+      <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../sourcefile/types_mod.f90.html#src">types_mod.F90</a>
+      </div>
+    </div>
 
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-
     <section>
-    <h2>Variables</h2>
-      <table class="table table-striped varlist">
-    <thead>
-      <tr>
-        <th>Type</th>
-<th>Visibility</th>        <th>Attributes</th>
-        <th></th>
-        <th>Name</th>
-<th></th><th>Initial</th>        <th></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-long"></span>
-              integer,
-            </td>
-              <td>public,</td>
-            <td>
-parameter               
-            </td>
-            <td>::</td>
-            <td><strong>long</strong></td>
-<td> =</td>
-                <td>8</td>
-            <td>
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-dp"></span>
-              integer,
-            </td>
-              <td>public,</td>
-            <td>
-parameter               
-            </td>
-            <td>::</td>
-            <td><strong>dp</strong></td>
-<td> =</td>
-                <td>kind(1.d0)</td>
-            <td>
-                
-            </td>
-        </tr>
-    </tbody>
-  </table>
+      <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="hl"><pre><span></span><a id="ln-1" name="ln-1" href="#ln-1"></a><span class="c">!&gt; Struct derived types</span>
+<a id="ln-2" name="ln-2" href="#ln-2"></a><span class="k">module </span><span class="n">types_mod</span><span class="w"></span>
+<a id="ln-3" name="ln-3" href="#ln-3"></a>
+<a id="ln-4" name="ln-4" href="#ln-4"></a><span class="w">  </span><span class="k">implicit none</span><span class="w"></span>
+<a id="ln-5" name="ln-5" href="#ln-5"></a>
+<a id="ln-6" name="ln-6" href="#ln-6"></a><span class="w">  </span><span class="c">!&gt; Holds an integer value</span>
+<a id="ln-7" name="ln-7" href="#ln-7"></a><span class="w">  </span><span class="k">type </span><span class="n">int_struct_t</span><span class="w"></span>
+<a id="ln-8" name="ln-8" href="#ln-8"></a><span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="k">value</span>
+<a id="ln-9" name="ln-9" href="#ln-9"></a><span class="k">  end type </span><span class="n">int_struct_t</span><span class="w"></span>
+<a id="ln-10" name="ln-10" href="#ln-10"></a>
+<a id="ln-11" name="ln-11" href="#ln-11"></a><span class="w">  </span><span class="c">!&gt; Holds a real value</span>
+<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="w">  </span><span class="k">type </span><span class="n">real_struct_t</span><span class="w"></span>
+<a id="ln-13" name="ln-13" href="#ln-13"></a><span class="w">    </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="k">value</span>
+<a id="ln-14" name="ln-14" href="#ln-14"></a><span class="k">  end type </span><span class="n">real_struct_t</span><span class="w"></span>
+<a id="ln-15" name="ln-15" href="#ln-15"></a>
+<a id="ln-16" name="ln-16" href="#ln-16"></a><span class="k">end module </span><span class="n">types_mod</span><span class="w"></span>
+</pre></div>
 
     </section>
-    <br>
-    
-    
-
-    
-    
-
-
-
-
     </div>
   </div>
 

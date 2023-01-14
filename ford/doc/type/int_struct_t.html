@@ -8,7 +8,7 @@
     <meta name="author" content="Patrick Flynn" >
     <link rel="icon" href="../favicon.png">
 
-    <title>kinds_mod &ndash; FORD Fortran Autodoc exerciser</title>
+    <title>int_struct_t &ndash; FORD Fortran Autodoc exerciser </title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -78,9 +78,9 @@
 
     <div class="container">
   <div class="row">
-    <h1>kinds_mod 
-    <small>Module</small>
-    
+    <h1>int_struct_t
+      <small>Derived Type</small>
+      
     </h1>
       <div class="row" id="info-bar">
     <div class="col-lg-12">
@@ -90,17 +90,18 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title=" 1.5% of total for modules and submodules.">4 statements</a>
+               title="<p> 9.4% of total for derived types.</p>Including implementation: 3 statements,  9.4% of total for derived types.">3 statements</a>
           </li>
 
             <li id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/kinds_mod.F90"> Source File</a>
+              <a href="../src/types_mod.F90"> Source File</a>
             </li>
         </ul>
         <ol class="breadcrumb in-well text-right">
-              <li><a href='../sourcefile/kinds_mod.f90.html'>kinds_mod.F90</a></li>
-          <li class="active">kinds_mod</li>
+              <li><a href='../sourcefile/types_mod.f90.html'>types_mod.F90</a></li>
+              <li><a href='../module/types_mod.html'>types_mod</a></li>
+          <li class="active">int_struct_t</li>
         </ol>
       </div>
     </div>
@@ -126,8 +127,7 @@
       </div>
       <div id="vars-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../type/int_struct_t.html#variable-value~5">value</a>
         </div>
       </div>
     </div>
@@ -156,9 +156,8 @@
     </div>
     
     <div class="col-md-9" id='text'>
-    <p>Fortran kinds module</p>
-    
-    
+      <h2>type, public :: int_struct_t</h2>
+    <p>Holds an integer value</p>
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
@@ -172,8 +171,7 @@
       </div>
       <div id="vars-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-long">long</a>
-            <a class="list-group-item" href="../module/kinds_mod.html#variable-dp">dp</a>
+            <a class="list-group-item" href="../type/int_struct_t.html#variable-value~5">value</a>
         </div>
       </div>
     </div>
@@ -200,9 +198,8 @@
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-
     <section>
-    <h2>Variables</h2>
+    <h2>Components</h2>
       <table class="table table-striped varlist">
     <thead>
       <tr>
@@ -215,34 +212,17 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-long"></span>
+              <span class="anchor" id="variable-value~5"></span>
               integer,
             </td>
-              <td>public,</td>
+              <td>public</td>
             <td>
-parameter               
+              
             </td>
             <td>::</td>
-            <td><strong>long</strong></td>
-<td> =</td>
-                <td>8</td>
-            <td>
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-dp"></span>
-              integer,
-            </td>
-              <td>public,</td>
-            <td>
-parameter               
-            </td>
-            <td>::</td>
-            <td><strong>dp</strong></td>
-<td> =</td>
-                <td>kind(1.d0)</td>
+            <td><strong>value</strong></td>
+                <td></td>
+                <td></td>
             <td>
                 
             </td>
@@ -253,14 +233,10 @@ parameter
     </section>
     <br>
     
+
+
+
     
-
-    
-    
-
-
-
-
     </div>
   </div>
 

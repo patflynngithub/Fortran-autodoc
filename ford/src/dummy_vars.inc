@@ -1,3 +1,8 @@
+    ! --------------------------------------------------------------------------
+    ! declarations duplicated in post-doc comments so see how the autodoc program
+    ! processes the declarations
+    ! ---------------------------------------------------------------------------
+
     logical :: bool1                                !! logical :: bool1
     logical, intent(in) :: bool2                    !! logical, intent(in) :: bool2
     logical, intent(out) :: bool3                   !! logical, intent(out) :: bool3

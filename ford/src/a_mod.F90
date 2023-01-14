@@ -7,6 +7,10 @@ module a_mod
 
   complex, private :: a_private_variable
    
+  ! --------------------------------------------------------------------------
+  ! declarations duplicated in post-doc comments so see how the autodoc program
+  ! processes the declarations
+  ! ---------------------------------------------------------------------------
   logical :: a_mod_bool1                     !! logical :: a_mod_bool1
   logical :: a_mod_bool2                     !! logical :: a_mod_bool2
   logical :: a_mod_bool3                     !! logical :: a_mod_bool3
