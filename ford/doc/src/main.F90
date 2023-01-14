@@ -1,6 +1,7 @@
 !> FORD autodoc exerciser program
 program main
 
+  use kinds_mod
   use a_mod
 !  use classes_mod
   
@@ -23,12 +24,16 @@ program main
   
   ! This is just a normal comment that will not be in autodoc
   ! Exercising a_mod module
-  call write_main(bool1, bool2, bool3, bool4, boolarray1, boolarray2,   &
-                  int1, int2, int3, int4, intarray1, intarray2,         &
-                  real1, real2, real3, real4, realarray1, realarray2,   &
-                  a_char, string1, string2, stringarray1, stringarray2, &
-                  output)
-  int_value = write_main_fcn("there!")
+  call main_dummy_vars_sub(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                           int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                           real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                           a_char, string1, string2, stringarray1, stringarray2,             &
+                           "Hello")
+  int_value = main_dummy_vars_fcn(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                                  int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                                  real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                                  a_char, string1, string2, stringarray1, stringarray2,             &
+                                  "Hello")
 
   call write_a_mod("Aphrodite!")
   int_value = write_a_mod_fcn("here!")
@@ -47,32 +52,37 @@ contains
 !> Write output from a main program subroutine
 !!
 !!   output   [in]    string to output
-subroutine write_main(bool1, bool2, bool3, bool4, boolarray1, boolarray2,   &
-                      int1, int2, int3, int4, intarray1, intarray2,         &
-                      real1, real2, real3, real4, realarray1, realarray2,   &
-                      a_char, string1, string2, stringarray1, stringarray2, &
-                      output)
-
+subroutine main_dummy_vars_sub(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                               int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                               real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                               a_char, string1, string2, stringarray1, stringarray2,             &
+                               output)
+    implicit none
 #include "dummy_vars.inc"
       
     write(*,*) "write_main: ", output
-end subroutine write_main
+end subroutine main_dummy_vars_sub
 
 !> Write output from a main program function
 !!
 !!   output   [in]    string to output
-function write_main_fcn(output)
+function main_dummy_vars_fcn(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                             int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                             real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                             a_char, string1, string2, stringarray1, stringarray2,             &
+                             output)
+
+    implicit none
 
     !> Just wanted a function. Return value not meaningful.
-    integer :: write_main_fcn
+    integer :: main_dummy_vars_fcn
+#include "dummy_vars.inc"
     
-    !> What to output
-    character(len=*), intent(in) :: output
       
     write(*,*) "write_main_fcn: ", output
     
-    write_main_fcn = 1
+    main_dummy_vars_fcn = 1
     
-end function write_main_fcn
+end function main_dummy_vars_fcn
 
 end program main
