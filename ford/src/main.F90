@@ -11,7 +11,39 @@ program main
   logical :: logical_value
   integer :: int_value  !! post-doc comment
 
-#include "local_vars.inc"
+  !> pre-doc comment
+  real    :: real_value !! post-doc comment
+   
+  logical :: bool1                     !! logical :: bool1
+  logical :: bool2                     !! logical :: bool2
+  logical :: bool3                     !! logical :: bool3
+  logical :: bool4                     !! logical :: bool4
+  logical :: boolarray1(2)             !! logical :: boolarray1(2)
+  logical, dimension(3) :: boolarray2  !! logical, dimension(3) :: boolarray2
+
+  integer :: int1                    !! integer :: int1
+  integer :: int2                    !! integer :: int2
+  integer :: int3                    !! integer :: int3
+  integer :: int4                    !! integer :: int4
+  integer(8) :: int5                 !! integer(8) :: int5
+  integer(kind=long) :: int6         !! integer(kind=long) :: int6
+  integer :: intarray1(3)            !! integer :: intarray1(3) 
+  integer, dimension(4) :: intarray2 !! integer, dimension(4) :: intarray2 
+
+  real :: real1                    !! real :: real1
+  real :: real2                    !! real :: real2
+  real :: real3                    !! real :: real3
+  real :: real4                    !! real :: real4
+  real(8) :: real5                 !! real(8) :: real5
+  real(kind=dp) :: real6           !! real(kind=dp) :: real6
+  real :: realarray1(5)            !! real :: realarray1(5)
+  real, dimension(6) :: realarray2 !! real, dimension(6) :: realarray2
+
+  character :: a_char                         !! character :: a_char
+  character(20) :: string1                    !! character(20) :: string1
+  character(21) :: string2                    !! character(21) :: string2
+  character(22), dimension(2) :: stringarray1 !! character(22), dimension(2) :: stringarray1
+  character(len=23) :: stringarray2(3)        !! character(len=23) :: stringarray2(3)
 
 !   !> pre-doc comment
 !  type(my_class_extended_t) :: stored_num  !! post-doc comment
@@ -21,6 +53,11 @@ program main
 !  else
 !     write (*,*) "number not stored"  
 !  end if
+
+  ! -------------------------------------------
+  !
+  ! Main program procedure calls
+  !
   
   ! This is just a normal comment that will not be in autodoc
   call main_dummy_vars_sub(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
@@ -50,8 +87,38 @@ program main
                                    a_char, string1, string2, stringarray1, stringarray2,             &
                                    "are")
 
-  call write_a_mod("Aphrodite!")
-  int_value = write_a_mod_fcn("here!")
+  ! -------------------------------------------
+  !
+  ! a_mod module procedure calls
+  !
+  
+  ! This is just a normal comment that will not be in autodoc
+  call a_mod_dummy_vars_sub(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                            int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                            real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                            a_char, string1, string2, stringarray1, stringarray2,             &
+                            "you")
+
+  ! This is just a normal comment that will not be in autodoc
+  int_value = a_mod_dummy_vars_fcn1(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                                    int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                                    real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                                    a_char, string1, string2, stringarray1, stringarray2,             &
+                                    "today?")
+
+  ! This is just a normal comment that will not be in autodoc
+  int_value = a_mod_dummy_vars_fcn2(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                                    int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                                    real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                                    a_char, string1, string2, stringarray1, stringarray2,             &
+                                    "What's")
+
+  ! This is just a normal comment that will not be in autodoc
+  int_value = a_mod_dummy_vars_fcn3(bool1, bool2, bool3, bool4, boolarray1, boolarray2,               &
+                                    int1, int2, int3, int4, int5, int6, intarray1, intarray2,         &
+                                    real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
+                                    a_char, string1, string2, stringarray1, stringarray2,             &
+                                    "up?")
 
 !   ! This is just a normal comment that will not be in autodoc
 !   ! Exercising types_mod module

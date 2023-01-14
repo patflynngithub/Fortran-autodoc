@@ -8,7 +8,7 @@
     <meta name="author" content="Patrick Flynn" >
     <link rel="icon" href="../favicon.png">
 
-    <title>main_dummy_vars_sub &ndash; FORD Fortran Autodoc exerciser</title>
+    <title>a_mod_dummy_vars_fcn1 &ndash; FORD Fortran Autodoc exerciser</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -76,8 +76,8 @@
 
     <div class="container">
   <div class="row">
-    <h1>main_dummy_vars_sub
-      <small>Subroutine</small>
+    <h1>a_mod_dummy_vars_fcn1
+      <small>Function</small>
       
     </h1>
       <div class="row" id="info-bar">
@@ -88,18 +88,18 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title="12.1% of total for procedures.">32 statements</a>
+               title="12.9% of total for procedures.">34 statements</a>
           </li>
 
             <li id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/main.F90"> Source File</a>
+              <a href="../src/a_mod.F90"> Source File</a>
             </li>
         </ul>
         <ol class="breadcrumb in-well text-right">
-              <li><a href='../sourcefile/main.f90.html'>main.F90</a></li>
-              <li><a href='../program/main.html'>main</a></li>
-          <li class="active">main_dummy_vars_sub</li>
+              <li><a href='../sourcefile/a_mod.f90.html'>a_mod.F90</a></li>
+              <li><a href='../module/a_mod.html'>a_mod</a></li>
+          <li class="active">a_mod_dummy_vars_fcn1</li>
         </ol>
       </div>
     </div>
@@ -142,11 +142,12 @@
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2> subroutine main_dummy_vars_sub(bool1, bool2, bool3, bool4, boolarray1, boolarray2, int1, int2, int3, int4, int5, int6, intarray1, intarray2, real1, real2, real3, real4, real5, real6, realarray1, realarray2, a_char, string1, string2, stringarray1, stringarray2, output)  
+    <h2>public  function a_mod_dummy_vars_fcn1(bool1, bool2, bool3, bool4, boolarray1, boolarray2, int1, int2, int3, int4, int5, int6, intarray1, intarray2, real1, real2, real3, real4, real5, real6, realarray1, realarray2, a_char, string1, string2, stringarray1, stringarray2, output)  
 </h2>
     
 
-    <p>Main program subroutine that exercises the dummy variables for autodoc program</p>
+    <p>a_mod module function (return type defined in body) that exercises the dummy variables for autodoc program</p>
+<p>Defines return type in body of function</p>
 <p>output   [in]    string to output</p>
 
     <h3>Arguments</h3>
@@ -162,7 +163,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-bool1~4"></span>
+              <span class="anchor" id="variable-bool1~6"></span>
               logical
             </td>
 <td></td>
@@ -177,7 +178,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-bool2~4"></span>
+              <span class="anchor" id="variable-bool2~6"></span>
               logical,
             </td>
 <td>intent(in)</td>
@@ -192,7 +193,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-bool3~4"></span>
+              <span class="anchor" id="variable-bool3~6"></span>
               logical,
             </td>
 <td>intent(out)</td>
@@ -207,7 +208,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-bool4~4"></span>
+              <span class="anchor" id="variable-bool4~6"></span>
               logical,
             </td>
 <td>intent(inout)</td>
@@ -222,7 +223,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-boolarray1~4"></span>
+              <span class="anchor" id="variable-boolarray1~6"></span>
               logical,
             </td>
 <td>intent(inout)</td>
@@ -237,7 +238,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-boolarray2~4"></span>
+              <span class="anchor" id="variable-boolarray2~6"></span>
               logical,
             </td>
 <td>intent(in),</td>
@@ -252,7 +253,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-int1~4"></span>
+              <span class="anchor" id="variable-int1~6"></span>
               integer
             </td>
 <td></td>
@@ -267,7 +268,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-int2~4"></span>
+              <span class="anchor" id="variable-int2~6"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -282,7 +283,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-int3~4"></span>
+              <span class="anchor" id="variable-int3~6"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -297,7 +298,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-int4~4"></span>
+              <span class="anchor" id="variable-int4~6"></span>
               integer,
             </td>
 <td>intent(inout)</td>
@@ -312,7 +313,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-int5~4"></span>
+              <span class="anchor" id="variable-int5~6"></span>
               integer(kind=8),
             </td>
 <td>intent(in)</td>
@@ -327,7 +328,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-int6~4"></span>
+              <span class="anchor" id="variable-int6~6"></span>
               integer(kind=long),
             </td>
 <td>intent(in)</td>
@@ -342,7 +343,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-intarray1~4"></span>
+              <span class="anchor" id="variable-intarray1~6"></span>
               integer,
             </td>
 <td>intent(inout)</td>
@@ -357,7 +358,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-intarray2~4"></span>
+              <span class="anchor" id="variable-intarray2~6"></span>
               integer,
             </td>
 <td>intent(in),</td>
@@ -372,7 +373,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-real1~4"></span>
+              <span class="anchor" id="variable-real1~6"></span>
               real
             </td>
 <td></td>
@@ -387,7 +388,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-real2~4"></span>
+              <span class="anchor" id="variable-real2~6"></span>
               real,
             </td>
 <td>intent(in)</td>
@@ -402,7 +403,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-real3~4"></span>
+              <span class="anchor" id="variable-real3~6"></span>
               real,
             </td>
 <td>intent(out)</td>
@@ -417,7 +418,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-real4~4"></span>
+              <span class="anchor" id="variable-real4~6"></span>
               real,
             </td>
 <td>intent(inout)</td>
@@ -432,7 +433,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-real5~4"></span>
+              <span class="anchor" id="variable-real5~6"></span>
               real(kind=8),
             </td>
 <td>intent(in)</td>
@@ -447,7 +448,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-real6~4"></span>
+              <span class="anchor" id="variable-real6~6"></span>
               real(kind=dp),
             </td>
 <td>intent(in)</td>
@@ -462,7 +463,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-realarray1~4"></span>
+              <span class="anchor" id="variable-realarray1~6"></span>
               real,
             </td>
 <td>intent(inout)</td>
@@ -477,7 +478,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-realarray2~4"></span>
+              <span class="anchor" id="variable-realarray2~6"></span>
               real,
             </td>
 <td>intent(in),</td>
@@ -492,7 +493,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-a_char~4"></span>
+              <span class="anchor" id="variable-a_char~6"></span>
               character,
             </td>
 <td>intent(in)</td>
@@ -507,7 +508,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-string1~4"></span>
+              <span class="anchor" id="variable-string1~6"></span>
               character(len=20),
             </td>
 <td>intent(in)</td>
@@ -522,7 +523,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-string2~4"></span>
+              <span class="anchor" id="variable-string2~6"></span>
               character(len=21),
             </td>
 <td>intent(out)</td>
@@ -537,7 +538,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-stringarray1~4"></span>
+              <span class="anchor" id="variable-stringarray1~6"></span>
               character(len=22),
             </td>
 <td>intent(inout),</td>
@@ -552,7 +553,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-stringarray2~4"></span>
+              <span class="anchor" id="variable-stringarray2~6"></span>
               character(len=23),
             </td>
 <td>intent(inout)</td>
@@ -567,7 +568,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-output~4"></span>
+              <span class="anchor" id="variable-output~5"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -584,6 +585,13 @@ character(len=*), intent(in) :: output</p>
     </tbody>
   </table>
 
+      <h3>Return Value
+        <small>
+          <span class="anchor" id="variable-a_mod_dummy_vars_fcn1"></span>
+          integer
+        </small>
+      </h3>
+      <p>Just wanted a function. Return value not meaningful.</p>
     <br>
 
     <section class="visible-xs visible-sm hidden-md">

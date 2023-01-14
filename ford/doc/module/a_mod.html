@@ -88,16 +88,16 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title="78.9% of total for modules and submodules.">15 statements</a>
+               title="97.6% of total for modules and submodules.">165 statements</a>
           </li>
 
             <li id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/a_module.F90"> Source File</a>
+              <a href="../src/a_mod.F90"> Source File</a>
             </li>
         </ul>
         <ol class="breadcrumb in-well text-right">
-              <li><a href='../sourcefile/a_module.f90.html'>a_module.F90</a></li>
+              <li><a href='../sourcefile/a_mod.f90.html'>a_mod.F90</a></li>
           <li class="active">a_mod</li>
         </ol>
       </div>
@@ -124,7 +124,33 @@
       </div>
       <div id="vars-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int_value">a_mod_int_value</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool1">a_mod_bool1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool2">a_mod_bool2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool3">a_mod_bool3</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool4">a_mod_bool4</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_boolarray1">a_mod_boolarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_boolarray2">a_mod_boolarray2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int1">a_mod_int1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int2">a_mod_int2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int3">a_mod_int3</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int4">a_mod_int4</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int5">a_mod_int5</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int6">a_mod_int6</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_intarray1">a_mod_intarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_intarray2">a_mod_intarray2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real1">a_mod_real1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real2">a_mod_real2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real3">a_mod_real3</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real4">a_mod_real4</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real5">a_mod_real5</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real6">a_mod_real6</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_realarray1">a_mod_realarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_realarray2">a_mod_realarray2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_a_char">a_mod_a_char</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_string1">a_mod_string1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_string2">a_mod_string2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_stringarray1">a_mod_stringarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_stringarray2">a_mod_stringarray2</a>
         </div>
       </div>
     </div>
@@ -146,7 +172,9 @@
       </div>
       <div id="funcs-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/a_mod.html#proc-write_a_mod_fcn">write_a_mod_fcn</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_fcn1">a_mod_dummy_vars_fcn1</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_fcn2">a_mod_dummy_vars_fcn2</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_fcn3">a_mod_dummy_vars_fcn3</a>
         </div>
       </div>
     </div>
@@ -159,7 +187,7 @@
       </div>
       <div id="subs-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/a_mod.html#proc-write_a_mod">write_a_mod</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_sub">a_mod_dummy_vars_sub</a>
         </div>
       </div>
     </div>
@@ -177,8 +205,20 @@
     </div>
     
     <div class="col-md-9" id='text'>
-    <p>Fortran module</p>
-    
+    <p>Fortran module with module-level variable and procedures</p>
+<br>        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+            <ul class="list-inline">
+                <li><a href='../module/kinds_mod.html'>kinds_mod</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+
     
     <br>
 
@@ -193,7 +233,33 @@
       </div>
       <div id="vars-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int_value">a_mod_int_value</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool1">a_mod_bool1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool2">a_mod_bool2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool3">a_mod_bool3</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_bool4">a_mod_bool4</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_boolarray1">a_mod_boolarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_boolarray2">a_mod_boolarray2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int1">a_mod_int1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int2">a_mod_int2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int3">a_mod_int3</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int4">a_mod_int4</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int5">a_mod_int5</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_int6">a_mod_int6</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_intarray1">a_mod_intarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_intarray2">a_mod_intarray2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real1">a_mod_real1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real2">a_mod_real2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real3">a_mod_real3</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real4">a_mod_real4</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real5">a_mod_real5</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_real6">a_mod_real6</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_realarray1">a_mod_realarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_realarray2">a_mod_realarray2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_a_char">a_mod_a_char</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_string1">a_mod_string1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_string2">a_mod_string2</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_stringarray1">a_mod_stringarray1</a>
+            <a class="list-group-item" href="../module/a_mod.html#variable-a_mod_stringarray2">a_mod_stringarray2</a>
         </div>
       </div>
     </div>
@@ -215,7 +281,9 @@
       </div>
       <div id="funcs-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/a_mod.html#proc-write_a_mod_fcn">write_a_mod_fcn</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_fcn1">a_mod_dummy_vars_fcn1</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_fcn2">a_mod_dummy_vars_fcn2</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_fcn3">a_mod_dummy_vars_fcn3</a>
         </div>
       </div>
     </div>
@@ -228,7 +296,7 @@
       </div>
       <div id="subs-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../module/a_mod.html#proc-write_a_mod">write_a_mod</a>
+            <a class="list-group-item" href="../module/a_mod.html#proc-a_mod_dummy_vars_sub">a_mod_dummy_vars_sub</a>
         </div>
       </div>
     </div>
@@ -259,7 +327,109 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-a_mod_int_value"></span>
+              <span class="anchor" id="variable-a_mod_bool1"></span>
+              logical,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_bool1</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>logical :: a_mod_bool1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_bool2"></span>
+              logical,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_bool2</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>logical :: a_mod_bool2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_bool3"></span>
+              logical,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_bool3</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>logical :: a_mod_bool3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_bool4"></span>
+              logical,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_bool4</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>logical :: a_mod_bool4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_boolarray1"></span>
+              logical,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_boolarray1</strong>(2)</td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>logical :: a_mod_boolarray1(2)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_boolarray2"></span>
+              logical,
+            </td>
+              <td>public,</td>
+            <td>
+              dimension(3)
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_boolarray2</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>logical, dimension(3) :: a_mod_boolarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_int1"></span>
               integer,
             </td>
               <td>public</td>
@@ -267,11 +437,351 @@
               
             </td>
             <td>::</td>
-            <td><strong>a_mod_int_value</strong></td>
+            <td><strong>a_mod_int1</strong></td>
                 <td></td>
                 <td></td>
             <td>
-                <p>not used but want example of module-level variable</p>
+                <p>integer :: a_mod_int1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_int2"></span>
+              integer,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_int2</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>integer :: a_mod_int2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_int3"></span>
+              integer,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_int3</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>integer :: a_mod_int3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_int4"></span>
+              integer,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_int4</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>integer :: a_mod_int4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_int5"></span>
+              integer(kind=8),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_int5</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>integer(8) :: a_mod_int5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_int6"></span>
+              integer(kind=long),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_int6</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>integer(kind=long) :: a_mod_int6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_intarray1"></span>
+              integer,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_intarray1</strong>(3)</td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>integer :: a_mod_intarray1(3) </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_intarray2"></span>
+              integer,
+            </td>
+              <td>public,</td>
+            <td>
+              dimension(4)
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_intarray2</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>integer, dimension(4) :: a_mod_intarray2 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_real1"></span>
+              real,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_real1</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real :: a_mod_real1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_real2"></span>
+              real,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_real2</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real :: a_mod_real2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_real3"></span>
+              real,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_real3</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real :: a_mod_real3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_real4"></span>
+              real,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_real4</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real :: a_mod_real4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_real5"></span>
+              real(kind=8),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_real5</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real(8) :: a_mod_real5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_real6"></span>
+              real(kind=dp),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_real6</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real(kind=dp) :: a_mod_real6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_realarray1"></span>
+              real,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_realarray1</strong>(5)</td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real :: a_mod_realarray1(5)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_realarray2"></span>
+              real,
+            </td>
+              <td>public,</td>
+            <td>
+              dimension(6)
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_realarray2</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>real, dimension(6) :: a_mod_realarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_a_char"></span>
+              character,
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_a_char</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>character :: a_mod_a_char</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_string1"></span>
+              character(len=20),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_string1</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>character(20) :: a_mod_string1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_string2"></span>
+              character(len=21),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_string2</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>character(21) :: a_mod_string2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_stringarray1"></span>
+              character(len=22),
+            </td>
+              <td>public,</td>
+            <td>
+              dimension(2)
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_stringarray1</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>character(22), dimension(2) :: a_mod_stringarray1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a_mod_stringarray2"></span>
+              character(len=23),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_mod_stringarray2</strong>(3)</td>
+                <td></td>
+                <td></td>
+            <td>
+                <p>character(len=23) :: a_mod_stringarray2(3)</p>
             </td>
         </tr>
     </tbody>
@@ -288,11 +798,11 @@
     <section>
     <h2>Functions</h2>
       <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-write_a_mod_fcn"></span><h3>public  function <a href='../proc/write_a_mod_fcn.html'>write_a_mod_fcn</a>(output)  
+    <div class="panel-heading codesum"><span class="anchor" id="proc-a_mod_dummy_vars_fcn1"></span><h3>public  function <a href='../proc/a_mod_dummy_vars_fcn1.html'>a_mod_dummy_vars_fcn1</a>(bool1, bool2, bool3, bool4, boolarray1, boolarray2, int1, int2, int3, int4, int5, int6, intarray1, intarray2, real1, real2, real3, real4, real5, real6, realarray1, realarray2, a_char, string1, string2, stringarray1, stringarray2, output)  
 </h3></div>
     <div class="panel-body">
           
-  <p>Write output from an a_mod module function</p>
+  <p>a_mod module function (return type defined in body) that exercises the dummy variables for autodoc program</p><a href="../proc/a_mod_dummy_vars_fcn1.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
   <h4>Arguments</h4>
       <table class="table table-striped varlist">
@@ -308,6 +818,411 @@
         <tr>
             <td>
               <span class="anchor" ></span>
+              logical
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool1</strong></td>
+            <td>
+<p>logical :: bool1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool2</strong></td>
+            <td>
+<p>logical, intent(in) :: bool2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool3</strong></td>
+            <td>
+<p>logical, intent(out) :: bool3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool4</strong></td>
+            <td>
+<p>logical, intent(inout) :: bool4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>boolarray1</strong>(2)</td>
+            <td>
+<p>logical, intent(inout) :: boolarray1(2)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(3)
+            </td>
+            <td>::</td>
+            <td><strong>boolarray2</strong></td>
+            <td>
+<p>logical, dimension(3), intent(in) :: boolarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int1</strong></td>
+            <td>
+<p>integer :: int1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int2</strong></td>
+            <td>
+<p>integer, intent(in) :: int2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int3</strong></td>
+            <td>
+<p>integer, intent(out) :: int3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int4</strong></td>
+            <td>
+<p>integer, intent(inout) :: int4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int5</strong></td>
+            <td>
+<p>integer(8), intent(in) :: int5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=long),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int6</strong></td>
+            <td>
+<p>integer(kind=long), intent(in) :: int6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>intarray1</strong>(3)</td>
+            <td>
+<p>integer, intent(inout) :: intarray1(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(4)
+            </td>
+            <td>::</td>
+            <td><strong>intarray2</strong></td>
+            <td>
+<p>integer, dimension(4), intent(in) :: intarray2 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real1</strong></td>
+            <td>
+<p>real :: real1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real2</strong></td>
+            <td>
+<p>real, intent(in) :: real2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real3</strong></td>
+            <td>
+<p>real, intent(out) :: real3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real4</strong></td>
+            <td>
+<p>real, intent(inout) :: real4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real5</strong></td>
+            <td>
+<p>real(8), intent(in) :: real5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=dp),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real6</strong></td>
+            <td>
+<p>real(kind=dp), intent(in) :: real6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>realarray1</strong>(5)</td>
+            <td>
+<p>real, intent(inout) :: realarray1(5)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(6)
+            </td>
+            <td>::</td>
+            <td><strong>realarray2</strong></td>
+            <td>
+<p>real, dimension(6), intent(in) :: realarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_char</strong></td>
+            <td>
+<p>character, intent(in) :: a_char</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=20),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string1</strong></td>
+            <td>
+<p>character(20), intent(in) :: string1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=21),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string2</strong></td>
+            <td>
+<p>character(21), intent(out) :: string2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=22),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              dimension(2)
+            </td>
+            <td>::</td>
+            <td><strong>stringarray1</strong></td>
+            <td>
+<p>character(22), dimension(2), intent(inout) :: stringarray1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=23),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>stringarray2</strong>(3)</td>
+            <td>
+<p>character(len=23), intent(inout) :: stringarray2(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -317,7 +1232,8 @@
             <td>::</td>
             <td><strong>output</strong></td>
             <td>
-<p>What to output</p>
+<p>What to output
+character(len=*), intent(in) :: output</p>
             </td>
         </tr>
     </tbody>
@@ -332,17 +1248,12 @@
     </div>
   </div>
 
-    </section>
-    <br>
-
-    <section>
-    <h2>Subroutines</h2>
       <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="proc-write_a_mod"></span><h3>public  subroutine <a href='../proc/write_a_mod.html'>write_a_mod</a>(output)  
+    <div class="panel-heading codesum"><span class="anchor" id="proc-a_mod_dummy_vars_fcn2"></span><h3>public  function <a href='../proc/a_mod_dummy_vars_fcn2.html'>a_mod_dummy_vars_fcn2</a>(bool1, bool2, bool3, bool4, boolarray1, boolarray2, int1, int2, int3, int4, int5, int6, intarray1, intarray2, real1, real2, real3, real4, real5, real6, realarray1, realarray2, a_char, string1, string2, stringarray1, stringarray2, output)  
 </h3></div>
     <div class="panel-body">
           
-  <p>Write output from an a_mod module subroutine</p>
+  <p>a_mod module function (return type defined in first line) that exercises the dummy variables for autodoc program</p><a href="../proc/a_mod_dummy_vars_fcn2.html" class="pull-right"><emph>Read more&hellip;</emph></a>
 
   <h4>Arguments</h4>
       <table class="table table-striped varlist">
@@ -358,6 +1269,411 @@
         <tr>
             <td>
               <span class="anchor" ></span>
+              logical
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool1</strong></td>
+            <td>
+<p>logical :: bool1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool2</strong></td>
+            <td>
+<p>logical, intent(in) :: bool2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool3</strong></td>
+            <td>
+<p>logical, intent(out) :: bool3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool4</strong></td>
+            <td>
+<p>logical, intent(inout) :: bool4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>boolarray1</strong>(2)</td>
+            <td>
+<p>logical, intent(inout) :: boolarray1(2)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(3)
+            </td>
+            <td>::</td>
+            <td><strong>boolarray2</strong></td>
+            <td>
+<p>logical, dimension(3), intent(in) :: boolarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int1</strong></td>
+            <td>
+<p>integer :: int1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int2</strong></td>
+            <td>
+<p>integer, intent(in) :: int2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int3</strong></td>
+            <td>
+<p>integer, intent(out) :: int3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int4</strong></td>
+            <td>
+<p>integer, intent(inout) :: int4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int5</strong></td>
+            <td>
+<p>integer(8), intent(in) :: int5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=long),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int6</strong></td>
+            <td>
+<p>integer(kind=long), intent(in) :: int6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>intarray1</strong>(3)</td>
+            <td>
+<p>integer, intent(inout) :: intarray1(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(4)
+            </td>
+            <td>::</td>
+            <td><strong>intarray2</strong></td>
+            <td>
+<p>integer, dimension(4), intent(in) :: intarray2 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real1</strong></td>
+            <td>
+<p>real :: real1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real2</strong></td>
+            <td>
+<p>real, intent(in) :: real2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real3</strong></td>
+            <td>
+<p>real, intent(out) :: real3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real4</strong></td>
+            <td>
+<p>real, intent(inout) :: real4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real5</strong></td>
+            <td>
+<p>real(8), intent(in) :: real5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=dp),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real6</strong></td>
+            <td>
+<p>real(kind=dp), intent(in) :: real6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>realarray1</strong>(5)</td>
+            <td>
+<p>real, intent(inout) :: realarray1(5)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(6)
+            </td>
+            <td>::</td>
+            <td><strong>realarray2</strong></td>
+            <td>
+<p>real, dimension(6), intent(in) :: realarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_char</strong></td>
+            <td>
+<p>character, intent(in) :: a_char</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=20),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string1</strong></td>
+            <td>
+<p>character(20), intent(in) :: string1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=21),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string2</strong></td>
+            <td>
+<p>character(21), intent(out) :: string2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=22),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              dimension(2)
+            </td>
+            <td>::</td>
+            <td><strong>stringarray1</strong></td>
+            <td>
+<p>character(22), dimension(2), intent(inout) :: stringarray1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=23),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>stringarray2</strong>(3)</td>
+            <td>
+<p>character(len=23), intent(inout) :: stringarray2(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -367,7 +1683,915 @@
             <td>::</td>
             <td><strong>output</strong></td>
             <td>
-<p>What to output</p>
+<p>What to output
+character(len=*), intent(in) :: output</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+      <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-a_mod_dummy_vars_fcn3"></span><h3>public  function <a href='../proc/a_mod_dummy_vars_fcn3.html'>a_mod_dummy_vars_fcn3</a>(bool1, bool2, bool3, bool4, boolarray1, boolarray2, int1, int2, int3, int4, int5, int6, intarray1, intarray2, real1, real2, real3, real4, real5, real6, realarray1, realarray2, a_char, string1, string2, stringarray1, stringarray2, output) result(val)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>a_mod module function (return type and result name defined in first line) that exercises the dummy variables for autodoc program</p><a href="../proc/a_mod_dummy_vars_fcn3.html" class="pull-right"><emph>Read more&hellip;</emph></a>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool1</strong></td>
+            <td>
+<p>logical :: bool1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool2</strong></td>
+            <td>
+<p>logical, intent(in) :: bool2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool3</strong></td>
+            <td>
+<p>logical, intent(out) :: bool3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool4</strong></td>
+            <td>
+<p>logical, intent(inout) :: bool4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>boolarray1</strong>(2)</td>
+            <td>
+<p>logical, intent(inout) :: boolarray1(2)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(3)
+            </td>
+            <td>::</td>
+            <td><strong>boolarray2</strong></td>
+            <td>
+<p>logical, dimension(3), intent(in) :: boolarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int1</strong></td>
+            <td>
+<p>integer :: int1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int2</strong></td>
+            <td>
+<p>integer, intent(in) :: int2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int3</strong></td>
+            <td>
+<p>integer, intent(out) :: int3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int4</strong></td>
+            <td>
+<p>integer, intent(inout) :: int4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int5</strong></td>
+            <td>
+<p>integer(8), intent(in) :: int5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=long),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int6</strong></td>
+            <td>
+<p>integer(kind=long), intent(in) :: int6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>intarray1</strong>(3)</td>
+            <td>
+<p>integer, intent(inout) :: intarray1(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(4)
+            </td>
+            <td>::</td>
+            <td><strong>intarray2</strong></td>
+            <td>
+<p>integer, dimension(4), intent(in) :: intarray2 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real1</strong></td>
+            <td>
+<p>real :: real1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real2</strong></td>
+            <td>
+<p>real, intent(in) :: real2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real3</strong></td>
+            <td>
+<p>real, intent(out) :: real3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real4</strong></td>
+            <td>
+<p>real, intent(inout) :: real4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real5</strong></td>
+            <td>
+<p>real(8), intent(in) :: real5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=dp),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real6</strong></td>
+            <td>
+<p>real(kind=dp), intent(in) :: real6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>realarray1</strong>(5)</td>
+            <td>
+<p>real, intent(inout) :: realarray1(5)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(6)
+            </td>
+            <td>::</td>
+            <td><strong>realarray2</strong></td>
+            <td>
+<p>real, dimension(6), intent(in) :: realarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_char</strong></td>
+            <td>
+<p>character, intent(in) :: a_char</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=20),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string1</strong></td>
+            <td>
+<p>character(20), intent(in) :: string1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=21),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string2</strong></td>
+            <td>
+<p>character(21), intent(out) :: string2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=22),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              dimension(2)
+            </td>
+            <td>::</td>
+            <td><strong>stringarray1</strong></td>
+            <td>
+<p>character(22), dimension(2), intent(inout) :: stringarray1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=23),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>stringarray2</strong>(3)</td>
+            <td>
+<p>character(len=23), intent(inout) :: stringarray2(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>output</strong></td>
+            <td>
+<p>What to output
+character(len=*), intent(in) :: output</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+    </section>
+    <br>
+
+    <section>
+    <h2>Subroutines</h2>
+      <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-a_mod_dummy_vars_sub"></span><h3>public  subroutine <a href='../proc/a_mod_dummy_vars_sub.html'>a_mod_dummy_vars_sub</a>(bool1, bool2, bool3, bool4, boolarray1, boolarray2, int1, int2, int3, int4, int5, int6, intarray1, intarray2, real1, real2, real3, real4, real5, real6, realarray1, realarray2, a_char, string1, string2, stringarray1, stringarray2, output)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>a_mod module subroutine that exercises the dummy variables for autodoc program</p><a href="../proc/a_mod_dummy_vars_sub.html" class="pull-right"><emph>Read more&hellip;</emph></a>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool1</strong></td>
+            <td>
+<p>logical :: bool1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool2</strong></td>
+            <td>
+<p>logical, intent(in) :: bool2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool3</strong></td>
+            <td>
+<p>logical, intent(out) :: bool3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bool4</strong></td>
+            <td>
+<p>logical, intent(inout) :: bool4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>boolarray1</strong>(2)</td>
+            <td>
+<p>logical, intent(inout) :: boolarray1(2)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              logical,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(3)
+            </td>
+            <td>::</td>
+            <td><strong>boolarray2</strong></td>
+            <td>
+<p>logical, dimension(3), intent(in) :: boolarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int1</strong></td>
+            <td>
+<p>integer :: int1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int2</strong></td>
+            <td>
+<p>integer, intent(in) :: int2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int3</strong></td>
+            <td>
+<p>integer, intent(out) :: int3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int4</strong></td>
+            <td>
+<p>integer, intent(inout) :: int4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int5</strong></td>
+            <td>
+<p>integer(8), intent(in) :: int5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer(kind=long),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>int6</strong></td>
+            <td>
+<p>integer(kind=long), intent(in) :: int6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>intarray1</strong>(3)</td>
+            <td>
+<p>integer, intent(inout) :: intarray1(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(4)
+            </td>
+            <td>::</td>
+            <td><strong>intarray2</strong></td>
+            <td>
+<p>integer, dimension(4), intent(in) :: intarray2 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real1</strong></td>
+            <td>
+<p>real :: real1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real2</strong></td>
+            <td>
+<p>real, intent(in) :: real2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real3</strong></td>
+            <td>
+<p>real, intent(out) :: real3</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real4</strong></td>
+            <td>
+<p>real, intent(inout) :: real4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=8),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real5</strong></td>
+            <td>
+<p>real(8), intent(in) :: real5</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=dp),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real6</strong></td>
+            <td>
+<p>real(kind=dp), intent(in) :: real6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>realarray1</strong>(5)</td>
+            <td>
+<p>real, intent(inout) :: realarray1(5)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real,
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              dimension(6)
+            </td>
+            <td>::</td>
+            <td><strong>realarray2</strong></td>
+            <td>
+<p>real, dimension(6), intent(in) :: realarray2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>a_char</strong></td>
+            <td>
+<p>character, intent(in) :: a_char</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=20),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string1</strong></td>
+            <td>
+<p>character(20), intent(in) :: string1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=21),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>string2</strong></td>
+            <td>
+<p>character(21), intent(out) :: string2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=22),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              dimension(2)
+            </td>
+            <td>::</td>
+            <td><strong>stringarray1</strong></td>
+            <td>
+<p>character(22), dimension(2), intent(inout) :: stringarray1</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=23),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>stringarray2</strong>(3)</td>
+            <td>
+<p>character(len=23), intent(inout) :: stringarray2(3)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>output</strong></td>
+            <td>
+<p>What to output
+character(len=*), intent(in) :: output</p>
             </td>
         </tr>
     </tbody>

@@ -29,6 +29,4 @@
     character(21) :: string2                    !! character(21) :: string2
     character(22), dimension(2) :: stringarray1 !! character(22), dimension(2) :: stringarray1
     character(len=23) :: stringarray2(3)        !! character(len=23) :: stringarray2(3)
-    !> What to output
-    character(10) :: output
 
