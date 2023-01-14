@@ -7,6 +7,7 @@ The code in *src/* exercises the FORD program with the following FORTRAN element
 (note: unless noted, the autodoc comments are pre-docs (!>): that is, auto-documentation is placed before the item they document.)
 
 - non-autodoc comments
+- preprocessor include
 - main program 
 - main program: variable declaration with comment before declaration
 - main program: variable declaration with inline comment after declaration
@@ -52,8 +53,9 @@ The code in *src/* exercises the FORD program with the following FORTRAN element
 - submodule that redeclares procedures
 - submodule that doesn't redeclare procedures
 
-FORTRAN elements still to add:
+FORTRAN elements not added:
 
+- FORTRAN include
 - generic procedures
 - generic type-bound procedures
 
