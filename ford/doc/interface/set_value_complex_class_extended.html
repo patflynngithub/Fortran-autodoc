@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +9,7 @@
     <meta name="author" content="Patrick Flynn" >
     <link rel="icon" href="../favicon.png">
 
-    <title>All Types &ndash; FORD Fortran Autodoc exerciser
-</title>
+    <title>set_value_complex_class_extended &ndash; FORD Fortran Autodoc exerciser</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -78,26 +78,131 @@
     </nav>
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12" id='text'>
-			 <h1>Derived Types</h1>
-			 <table class="table table-striped nostretched">
-			 <thead>
-			 <tr><th>Type</th><th>Location</th><th>Extends</th><th>Description</th></tr>
-			 </thead><tbody>
-			   <tr><td><a href='../type/complex_class_extended_t.html'>complex_class_extended_t</a></td><td><a href='../module/classes_mod.html'>classes_mod</a></td><td><a href='../type/complex_class_t.html'>complex_class_t</a></td><td><p>Adds capability to check if a complex has been stored</p></td></tr>
-			   <tr><td><a href='../type/complex_class_t.html'>complex_class_t</a></td><td><a href='../module/classes_mod.html'>classes_mod</a></td><td>None</td><td><p>Holds the complex structure</p></td></tr>
-			   <tr><td><a href='../type/complex_struct_t.html'>complex_struct_t</a></td><td><a href='../module/types_mod.html'>types_mod</a></td><td>None</td><td><p>Holds a complex value</p></td></tr>
-			   <tr><td><a href='../type/int_class_extended_t.html'>int_class_extended_t</a></td><td><a href='../module/classes_mod.html'>classes_mod</a></td><td><a href='../type/int_class_t.html'>int_class_t</a></td><td><p>Adds capability to check if an integer has been stored</p></td></tr>
-			   <tr><td><a href='../type/int_class_t.html'>int_class_t</a></td><td><a href='../module/classes_mod.html'>classes_mod</a></td><td>None</td><td><p>Holds the integer structure</p></td></tr>
-			   <tr><td><a href='../type/int_struct_t.html'>int_struct_t</a></td><td><a href='../module/types_mod.html'>types_mod</a></td><td>None</td><td><p>Holds an integer value</p></td></tr>
-			   <tr><td><a href='../type/real_class_extended_t.html'>real_class_extended_t</a></td><td><a href='../module/classes_mod.html'>classes_mod</a></td><td><a href='../type/real_class_t.html'>real_class_t</a></td><td><p>Adds capability to check if a real has been stored</p></td></tr>
-			   <tr><td><a href='../type/real_class_t.html'>real_class_t</a></td><td><a href='../module/classes_mod.html'>classes_mod</a></td><td>None</td><td><p>Holds the real structure</p></td></tr>
-			   <tr><td><a href='../type/real_struct_t.html'>real_struct_t</a></td><td><a href='../module/types_mod.html'>types_mod</a></td><td>None</td><td><p>Holds a real value</p></td></tr>
-			 </tbody></table>
-             
-        </div>
+  <div class="row">
+    <h1>set_value_complex_class_extended
+      <small>Interface</small>
+      
+    </h1>
+      <div class="row" id="info-bar">
+    <div class="col-lg-12">
+      <div class="well well-sm">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+          <li id="statements"><i class="fa fa-list-ol"></i>
+            <a data-toggle="tooltip"
+               data-placement="bottom" data-html="true"
+               title=" 6.3% of total for procedures.">38 statements</a>
+          </li>
+
+            <li id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/classes_mod.F90"> Source File</a>
+            </li>
+        </ul>
+        <ol class="breadcrumb in-well text-right">
+              <li><a href='../sourcefile/classes_mod.f90.html'>classes_mod.F90</a></li>
+              <li><a href='../module/classes_mod.html'>classes_mod</a></li>
+          <li class="active">set_value_complex_class_extended</li>
+        </ol>
       </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+    <em>None</em>
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+      <h2>interface</h2>
+      <p>For submodule</p>
+      <br>
+      <h2>public module subroutine set_value_complex_class_extended(this, value)  
+</h2>
+
+    
+
+    <h3>Arguments</h3>
+        <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-this~8"></span>
+              class(<a href='../type/complex_class_extended_t.html'>complex_class_extended_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>this</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-value~6"></span>
+              complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>value</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <br>
+
+ </div>
+</div>
+
     <hr>    
     </div> <!-- /container -->
     <footer>

@@ -55,6 +55,14 @@ module classes_mod
     procedure :: is_set => is_set_real_class_extended
   end type real_class_extended_t    
 
+  ! --------------------------------------------------------------------------
+  ! Complex class
+  ! 
+
+#define _TYPEDEF
+#include "complex_type.inc"
+#undef _TYPEDEF
+
 !> For submodule
 interface
 
@@ -103,6 +111,12 @@ interface
      class(real_class_extended_t), intent(in) :: this
 
   end function is_set_real_class_extended
+
+  ! --------------------------------------------------------------------------
+  ! Complex class
+  ! 
+
+#include "complex_type.inc"
 
 end interface
 

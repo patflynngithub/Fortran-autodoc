@@ -13,4 +13,9 @@ module types_mod
     real :: value
   end type real_struct_t
 
+  !> Holds a complex value
+  type complex_struct_t
+    complex :: value
+  end type complex_struct_t
+
 end module types_mod

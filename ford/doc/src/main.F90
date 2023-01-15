@@ -52,6 +52,8 @@ program main
   type(int_class_extended_t) :: stored_int  !! post-doc comment
   !> pre-doc comment
   type(real_class_extended_t) :: stored_real  !! post-doc comment
+  !> pre-doc comment
+  type(complex_class_extended_t) :: stored_complex  !! post-doc comment
   
   ! -------------------------------------------
   !
@@ -70,6 +72,12 @@ program main
      write (*,*) "real not stored"  
   end if
 
+  if (stored_complex%is_set()) then
+     write (*,*) "complex stored"
+  else
+     write (*,*) "complex not stored"  
+  end if
+
   ! This is just a normal comment that will not be in autodoc
   write (*,*) "Storing integer"
   call stored_int%set_value(int_value)
@@ -85,6 +93,14 @@ program main
      write (*,*) "real stored"
   else
      write (*,*) "real not stored"  
+  end if
+
+  write (*,*) "Storing complex"
+  call stored_complex%set_value(cmplx(1.0,2.0))
+  if (stored_complex%is_set()) then
+     write (*,*) "complex stored"
+  else
+     write (*,*) "complex not stored"  
   end if
 
   ! -------------------------------------------

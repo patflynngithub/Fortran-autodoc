@@ -8,7 +8,7 @@
     <meta name="author" content="Patrick Flynn" >
     <link rel="icon" href="../favicon.png">
 
-    <title>int_class_t &ndash; FORD Fortran Autodoc exerciser </title>
+    <title>complex_class_extended_t &ndash; FORD Fortran Autodoc exerciser </title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -78,7 +78,7 @@
 
     <div class="container">
   <div class="row">
-    <h1>int_class_t
+    <h1>complex_class_extended_t
       <small>Derived Type</small>
       
     </h1>
@@ -90,7 +90,7 @@
           <li id="statements"><i class="fa fa-list-ol"></i>
             <a data-toggle="tooltip"
                data-placement="bottom" data-html="true"
-               title="<p>12.5% of total for derived types.</p>Including implementation: 6 statements, 12.5% of total for derived types.">6 statements</a>
+               title="<p>14.6% of total for derived types.</p>Including implementation: 7 statements, 14.6% of total for derived types.">7 statements</a>
           </li>
 
             <li id="source-file">
@@ -101,7 +101,7 @@
         <ol class="breadcrumb in-well text-right">
               <li><a href='../sourcefile/classes_mod.f90.html'>classes_mod.F90</a></li>
               <li><a href='../module/classes_mod.html'>classes_mod</a></li>
-          <li class="active">int_class_t</li>
+          <li class="active">complex_class_extended_t</li>
         </ol>
       </div>
     </div>
@@ -143,7 +143,8 @@
       </div>
       <div id="boundprocs-0" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../type/int_class_t.html#boundprocedure-set_value">set_value</a>
+            <a class="list-group-item" href="../type/complex_class_extended_t.html#boundprocedure-set_value~6">set_value</a>
+            <a class="list-group-item" href="../type/complex_class_extended_t.html#boundprocedure-is_set~3">is_set</a>
         </div>
       </div>
     </div>
@@ -156,8 +157,8 @@
     </div>
     
     <div class="col-md-9" id='text'>
-      <h2>type, public :: int_class_t</h2>
-    <p>Holds the integer structure</p>
+      <h2>type, public, extends(<a href='../type/complex_class_t.html'>complex_class_t</a>) :: complex_class_extended_t</h2>
+    <p>Adds capability to check if a complex has been stored</p>
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
@@ -187,7 +188,8 @@
       </div>
       <div id="boundprocs-1" class="panel-collapse collapse">
         <div class="list-group">
-            <a class="list-group-item" href="../type/int_class_t.html#boundprocedure-set_value">set_value</a>
+            <a class="list-group-item" href="../type/complex_class_extended_t.html#boundprocedure-set_value~6">set_value</a>
+            <a class="list-group-item" href="../type/complex_class_extended_t.html#boundprocedure-is_set~3">is_set</a>
         </div>
       </div>
     </div>
@@ -204,18 +206,18 @@
       <section>
         <h2>Type-Bound Procedures</h2>
             <div class="panel panel-default">
-    <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-set_value"></span><h3>procedure, public :: <strong>set_value</strong>  => <a href='../interface/set_value_int_class.html'>set_value_int_class</a>         
+    <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-set_value~6"></span><h3>procedure, public :: <strong>set_value</strong>  => <a href='../interface/set_value_complex_class_extended.html'>set_value_complex_class_extended</a>         
     </h3></div>
       <div class="panel-body">
         
-        <p>Sets the integer structure</p>
+        <p>Stores complex and records that this storage happened</p>
       </div>
     <ul class="list-group">
         <li class="list-group-item">
               <h3>interface </h3>
                 <p>For submodule</p>
                   <h3>
-    public module subroutine set_value_int_class(this, value)  
+    public module subroutine set_value_complex_class_extended(this, value)  
 </h3>
   
 
@@ -233,7 +235,7 @@
         <tr>
             <td>
               <span class="anchor" ></span>
-              class(<a href='../type/int_class_t.html'>int_class_t</a>),
+              class(<a href='../type/complex_class_extended_t.html'>complex_class_extended_t</a>),
             </td>
 <td>intent(inout)</td>
               <td></td>            <td>
@@ -248,7 +250,7 @@
         <tr>
             <td>
               <span class="anchor" ></span>
-              integer,
+              complex,
             </td>
 <td>intent(in)</td>
               <td></td>            <td>
@@ -263,6 +265,61 @@
     </tbody>
   </table>
 
+
+        </li>
+    </ul>
+  </div>
+
+            <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-is_set~3"></span><h3>procedure, public :: <strong>is_set</strong>  => <a href='../interface/is_set_complex_class_extended.html'>is_set_complex_class_extended</a>         
+    </h3></div>
+      <div class="panel-body">
+        
+        <p>Has a complex been stored yet?</p>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>interface </h3>
+                <p>For submodule</p>
+                  <h3>
+    public module function is_set_complex_class_extended(this)  
+</h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='../type/complex_class_extended_t.html'>complex_class_extended_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>this</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>logical</small>
+    </h4>
+    
 
         </li>
     </ul>
