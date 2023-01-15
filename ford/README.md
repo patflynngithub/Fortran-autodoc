@@ -7,6 +7,7 @@ The code in *src/* exercises the FORD program with the following FORTRAN element
 (note: unless noted, the autodoc comments are pre-docs (!>): that is, auto-documentation is placed before the item they document.)
 
 - non-autodoc comments
+- both pre-doc/post-doc comments on one entity
 - preprocessor include
 - main program 
 - main program: variable declaration with comment before declaration

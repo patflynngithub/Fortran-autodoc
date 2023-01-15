@@ -1,4 +1,4 @@
-!> Class derived types
+!> Class derived types module
 module classes_mod
 
   use types_mod
@@ -34,24 +34,24 @@ module classes_mod
   ! Real class
   ! 
 
-  !> Holds the integer structure
+  !> Holds the real structure
   type real_class_t
     private
     type(real_struct_t) :: real_struct
   contains
-    !> Sets the integer structure
+    !> Sets the real structure
     procedure :: set_value => set_value_real_class
   end type real_class_t
 
-  !> Adds capability to check if an integer has been stored
+  !> Adds capability to check if a real has been stored
   type, extends(real_class_t) :: real_class_extended_t
     private
-    !> integer has not been stored = .FALSE. (default), has been stored = .TRUE.
+    !> real has not been stored = .FALSE. (default), has been stored = .TRUE.
     logical :: value_set = .FALSE.
   contains
-    !> Stores integer and records that this storage happened
+    !> Stores real and records that this storage happened
     procedure :: set_value => set_value_real_class_extended
-    !> Has an integer been stored yet?
+    !> Has a real been stored yet?
     procedure :: is_set => is_set_real_class_extended
   end type real_class_extended_t    
 

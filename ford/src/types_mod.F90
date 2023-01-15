@@ -1,4 +1,4 @@
-!> Struct derived types
+!> Struct derived types module
 module types_mod
 
   implicit none

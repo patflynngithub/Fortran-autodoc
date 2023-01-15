@@ -1,4 +1,4 @@
-!> Integer class submodule
+!> Integer class submodule (redeclares module declarations)
 submodule (classes_mod) int_class_submod
 
 contains

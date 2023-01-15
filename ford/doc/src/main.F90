@@ -50,7 +50,6 @@ program main
 
   !> pre-doc comment
   type(int_class_extended_t) :: stored_int  !! post-doc comment
-  
   !> pre-doc comment
   type(real_class_extended_t) :: stored_real  !! post-doc comment
   
