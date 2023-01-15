@@ -2,7 +2,9 @@
 program main
 
   use kinds_mod
+  !> declares/defines module-level variables/procedures
   use a_mod
+  !> declares/defines type-bound procedures and uses submodules
   use classes_mod
   
   implicit none
