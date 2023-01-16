@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['kinds_5fmod_0',['kinds_mod',['../namespacekinds__mod.html',1,'']]],
-  ['kinds_5fmod_2ef08_1',['kinds_mod.f08',['../kinds__mod_8f08.html',1,'']]]
+  ['real_5fstruct_5ft_0',['real_struct_t',['../structtypes__mod_1_1real__struct__t.html',1,'types_mod']]]
 ];

@@ -1,0 +1,53 @@
+## Doxygen notes
+
+### Attempt 1
+
+- Copy over *ford/src* directory contents to *doxygen/src* (*.F90, *.inc, Makefile)
+  - used earlier, less complicated version of the *ford/src* code
+- Generate Doxygen settings file (Doxyfile)
+  - doxygen -g   (in *doxygen/* directory)
+- Modify Doxyfile
+  - INPUT                  = src
+  - OUTPUT_DIRECTORY       = doc
+  - OPTIMIZE_FOR_FORTRAN   = YES
+- Run doxygen
+  - doxygen
+  
+RESULT:  Blank HTML documentation
+
+### Attempt 2
+
+- Further modify Doxyfile
+  - add *.F90 to FILE_PATTERNS setting
+  - EXTENSION_MAPPING      = F90=FortranFree
+
+RESULT: generated HTML documentation, but ...
+- warnings about *a_mod.F90* module variables not being documented
+  - they show up anyway in HTML doc (maybe warning is referencing lack of autodoc comment)
+- warnings about *kinds_mod.F90* module variables not being documented
+  - they show up anyway in HTML doc (maybe warning is referencing lack of autodoc comment)
+- warnings about *types_mod.F90* module variables not being documented
+  - they show up anyway in HTML doc (maybe warning is referencing lack of autodoc comment)
+- *classes_mod* HTML doc missing some type definitions (does contain *int_class_t* entry but its interface information is not displayed)
+  - int_class_extended_t
+  - real_class_t
+  - real_class_extended_t
+
+### Attempt 3
+
+- Modify *doxygen/src/real_class_submod.F90* to redeclare the interface declarations done in *doxygen/src/class_mod.F90*. (maybe this will cause the *real_class_t* type definition to show in the HTML documentation)
+
+RESULT: no difference
+
+### Attempt 4
+
+- Rename *.F90 files to *.f08
+  - had to modify Makefile to add *-cpp* option to *gfortran* to make compilation work (the lowercase *f* in *.fo8* causes *gfortran* to not use the preprocessor before compilation)
+
+RESULT: no difference
+
+## Conclusion
+
+- THUMBS DOWN!
+  - Might be able to fix some of the above errors by tinkering around with *Doxyfile* settings and our *doxygen/src* Fortran file structures (external/internal), but I think the module/submodule problems in *classes_mod.F90* are endemic to the current version of *doxygen* (v.1.9.6) and can't be fixed without *doxygen*'s code itself being improved
+

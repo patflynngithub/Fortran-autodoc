@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['long_0',['long',['../namespacekinds__mod.html#a0d8d78638c277cb8c5cc35e3eaf4d82c',1,'kinds_mod']]]
+  ['set_5fvalue_0',['set_value',['../structclasses__mod_1_1int__class__t.html#a012c00a5bfa66c667c3cd917768be1eb',1,'classes_mod::int_class_t']]]
 ];

@@ -499,7 +499,7 @@ NUM_PROC_THREADS       = 1
 # normally produced when WARNINGS is set to YES.
 # The default value is: NO.
 
-EXTRACT_ALL            = NO
+EXTRACT_ALL            = YES
 
 # If the EXTRACT_PRIVATE tag is set to YES, all private members of a class will
 # be included in the documentation.
@@ -991,8 +991,8 @@ FILE_PATTERNS          = *.c \
                          *.dox \
                          *.py \
                          *.pyw \
-                         *.F90 \
                          *.f90 \
+                         *.F90 \
                          *.f95 \
                          *.f03 \
                          *.f08 \

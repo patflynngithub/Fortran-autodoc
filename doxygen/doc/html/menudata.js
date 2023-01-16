@@ -28,21 +28,11 @@ var menudata={children:[
 {text:"Modules",url:"namespaces.html",children:[
 {text:"Modules List",url:"namespaces.html"},
 {text:"Module Members",url:"namespacemembers.html",children:[
-{text:"All",url:"namespacemembers.html",children:[
-{text:"a",url:"namespacemembers.html#index_a"},
-{text:"d",url:"namespacemembers.html#index_d"},
-{text:"l",url:"namespacemembers.html#index_l"}]},
-{text:"Functions/Subroutines",url:"namespacemembers_func.html"},
-{text:"Variables",url:"namespacemembers_vars.html"}]}]},
+{text:"All",url:"namespacemembers.html"},
+{text:"Functions/Subroutines",url:"namespacemembers_func.html"}]}]},
 {text:"Data Types",url:"annotated.html",children:[
 {text:"Data Types List",url:"annotated.html"},
 {text:"Data Type Index",url:"classes.html"},
 {text:"Data Fields",url:"functions.html",children:[
 {text:"All",url:"functions.html"},
-{text:"Functions/Subroutines",url:"functions_func.html"},
-{text:"Variables",url:"functions_vars.html"}]}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html"},
-{text:"Functions/Subroutines",url:"globals_func.html"}]}]}]}
+{text:"Functions/Subroutines",url:"functions_func.html"}]}]}]}

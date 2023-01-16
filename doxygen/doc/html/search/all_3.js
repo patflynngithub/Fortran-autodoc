@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dp_0',['dp',['../namespacekinds__mod.html#a77ce23e3aa60aac504e3c36098156c49',1,'kinds_mod']]],
-  ['dummy_5fvars_2einc_1',['dummy_vars.inc',['../dummy__vars_8inc.html',1,'']]]
+  ['int_5fclass_5ft_0',['int_class_t',['../structclasses__mod_1_1int__class__t.html',1,'classes_mod']]],
+  ['int_5fstruct_5ft_1',['int_struct_t',['../structtypes__mod_1_1int__struct__t.html',1,'types_mod']]]
 ];
