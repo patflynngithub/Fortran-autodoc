@@ -62,6 +62,7 @@ FORTRAN elements not added yet:
 - FORTRAN include (different from CPP preprocesssor include)
 - generic procedures
 - generic type-bound procedures
+- abstract stuff
 
 Notes:
 - FORD extracts procedure dummy variable information directly from the dummy variable FORTRAN declarations inside the procedure rather than any info inside an autodoc comment for the procedure definition. So, if the general procedure comment includes any dummy variable info, it is duplicative of the information displayed by FORD after directly analyzing the FORTRAN code. So, in the final generated autodoc documentation (html, pdf, etc.) there will be two sets of autodoc comments on the dummy variables (not in same place), with the set generated directly from the FORTRAN code always (if there is no FORD bug) being correct. Generally, not a big deal. However, if a change is made to a procedure's dummy variable without changing its duplicative info inside the procedure's autodoc comment, the two sets of comments on the dummy variable will disagree, with one being correct and the other not correct.
