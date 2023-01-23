@@ -9,6 +9,12 @@ program main
   
   implicit none
 
+  interface 
+    subroutine non_module_file_procedure(int_value)
+      integer :: int_value
+    end subroutine non_module_file_procedure
+  end interface
+
   !> pre-doc comment
   logical :: logical_value
   integer :: int_value  !! post-doc comment
@@ -170,6 +176,13 @@ program main
                                     real1, real2, real3, real4, real5, real6, realarray1, realarray2, &
                                     a_char, string1, string2, stringarray1, stringarray2,             &
                                     "up?")
+
+  ! -------------------------------------------
+  !
+  ! A non-module file procedure call 
+  !
+  
+  call non_module_file_procedure(10)
 
 contains
 
