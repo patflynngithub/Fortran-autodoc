@@ -1,3 +1,5 @@
+!! kinds_mod module file
+
 !> Fortran kinds module
 module kinds_mod
 

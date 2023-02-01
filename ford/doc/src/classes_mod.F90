@@ -1,3 +1,5 @@
+!! classes_mod module file
+
 !> Class derived types module
 module classes_mod
 
@@ -63,7 +65,6 @@ module classes_mod
 #include "complex_type.inc"
 #undef _TYPEDEF
 
-!> For submodule
 interface
 
   ! --------------------------------------------------------------------------

@@ -1,3 +1,5 @@
+!! real_class_submod submodule file
+
 !> Real class submodule (no redeclaration of module declarations)
 submodule (classes_mod) real_class_submod 
 

@@ -210,15 +210,19 @@
     <div class="hl"><pre><span></span><a id="ln-1" name="ln-1" href="#ln-1"></a><span class="c">!! This is a non-module subprogram file containing a subroutine</span>
 <a id="ln-2" name="ln-2" href="#ln-2"></a>
 <a id="ln-3" name="ln-3" href="#ln-3"></a><span class="c">!&gt; This is the subroutine in the non-module subprogram file</span>
-<a id="ln-4" name="ln-4" href="#ln-4"></a><span class="k">subroutine </span><span class="n">non_module_file_procedure</span><span class="p">(</span><span class="n">int_value</span><span class="p">)</span><span class="w"></span>
-<a id="ln-5" name="ln-5" href="#ln-5"></a>
-<a id="ln-6" name="ln-6" href="#ln-6"></a><span class="k">implicit none</span>
+<a id="ln-4" name="ln-4" href="#ln-4"></a>
+<a id="ln-5" name="ln-5" href="#ln-5"></a><span class="k">subroutine </span><span class="n">non_module_file_procedure</span><span class="p">(</span><span class="n">int_value</span><span class="p">)</span><span class="w"></span>
+<a id="ln-6" name="ln-6" href="#ln-6"></a>
 <a id="ln-7" name="ln-7" href="#ln-7"></a>
-<a id="ln-8" name="ln-8" href="#ln-8"></a><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">int_value</span><span class="w"></span>
-<a id="ln-9" name="ln-9" href="#ln-9"></a>
-<a id="ln-10" name="ln-10" href="#ln-10"></a><span class="k">write</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;Got to non_module_file_procedure()&quot;</span><span class="w"></span>
-<a id="ln-11" name="ln-11" href="#ln-11"></a>
-<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="k">end subroutine </span><span class="n">non_module_file_procedure</span><span class="w"></span>
+<a id="ln-8" name="ln-8" href="#ln-8"></a><span class="k">implicit none</span><span class="w"></span>
+<a id="ln-9" name="ln-9" href="#ln-9"></a><span class="c">!! non_module_file_procedure() comment after implicit none</span>
+<a id="ln-10" name="ln-10" href="#ln-10"></a>
+<a id="ln-11" name="ln-11" href="#ln-11"></a><span class="c">!&gt; int_value comment</span>
+<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">int_value</span><span class="w"></span>
+<a id="ln-13" name="ln-13" href="#ln-13"></a>
+<a id="ln-14" name="ln-14" href="#ln-14"></a><span class="k">write</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;Got to non_module_file_procedure()&quot;</span><span class="w"></span>
+<a id="ln-15" name="ln-15" href="#ln-15"></a>
+<a id="ln-16" name="ln-16" href="#ln-16"></a><span class="k">end subroutine </span><span class="n">non_module_file_procedure</span><span class="w"></span>
 </pre></div>
 
     </section>

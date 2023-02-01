@@ -1,3 +1,5 @@
+!! int_class_submod submodule file
+
 !> Integer class submodule (redeclares module declarations)
 submodule (classes_mod) int_class_submod
 

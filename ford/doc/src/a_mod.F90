@@ -1,4 +1,13 @@
+!! a_mod module file
+
+!> author: Patrick Flynn (module a_mod)
+!> date: 1/26/23 (module a_mod)
+!> version: 1.2.3 (module a_mod)
+!> deprecated: true
+!>
 !> Fortran module with module-level variable and procedures
+!> 
+!> more detailed descripton
 module a_mod
 
   use kinds_mod
@@ -44,6 +53,8 @@ module a_mod
     
 contains
 
+!! autodoc'd Body comment in a_mod module contains section
+
 !> a_mod module subroutine that exercises the dummy variables for autodoc program
 !! 
 !!   output   [in]    string to output
@@ -58,7 +69,12 @@ subroutine a_mod_dummy_vars_sub(bool1, bool2, bool3, bool4, boolarray1, boolarra
     write(*,*) "a_mod_dummy_vars_sub: ", output
 end subroutine a_mod_dummy_vars_sub
 
-!> a_mod module function (return type defined in body) that exercises the dummy variables for autodoc program
+!> author: Patrick Flynn (a_mod_dummy_vars_fcn1)
+!! date: 1/26/23 (module a_mod_dummy_vars_fcn1)
+!! version: 1.2.3 (a_mod_dummy_vars_fcn1)
+!! deprecated: true
+!!
+!! a_mod module function (return type defined in body) that exercises the dummy variables for autodoc program
 !!
 !! Defines return type in body of function
 !!
@@ -81,7 +97,10 @@ function a_mod_dummy_vars_fcn1(bool1, bool2, bool3, bool4, boolarray1, boolarray
     
 end function a_mod_dummy_vars_fcn1
 
-!> a_mod module function (return type defined in first line) that exercises the dummy variables for autodoc program
+!> summary: a_mod module function (return type defined in first line) that exercises the dummy variables for autodoc program
+!! author: Patrick Flynn (a_mod_dummy_vars_fcn2)
+!! date: 1/26/23 (module a_mod_dummy_vars_fcn2)
+!! version: 1.2.3 (a_mod_dummy_vars_fcn2)
 !!
 !! Defines return type in first line of function
 !!

@@ -1,3 +1,5 @@
+!! types_mod module file
+
 !> Struct derived types module
 module types_mod
 

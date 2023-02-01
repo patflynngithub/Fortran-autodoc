@@ -1,3 +1,5 @@
+!! complex_class_submod submodule file
+
 !> Complex class submodule (no redeclaration of module declarations)
 submodule (classes_mod) complex_class_submod 
 

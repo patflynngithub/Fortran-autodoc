@@ -1,10 +1,10 @@
-!> FORD Fortran autodoc exerciser program
+!! Main program file
+
+!> FORD Fortran autodoc exerciser main program
 program main
 
   use kinds_mod
-  !> declares/defines module-level variables/procedures
-  use a_mod
-  !> declares/defines type-bound procedures and uses submodules
+  use a_mod 
   use classes_mod
   
   implicit none
